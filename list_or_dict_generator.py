@@ -23,6 +23,12 @@ class RandomListOrDictionnary() :
         self.values_length = values_length
         
         
+        
+    def returnRandomString(self, size) :
+        alpha_numeric = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        key = random.choices(alpha_numeric, k=(random.randint(3, size)))
+        return "".join(key)
+    
     
     
 
