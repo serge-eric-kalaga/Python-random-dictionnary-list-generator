@@ -30,5 +30,16 @@ class RandomListOrDictionnary() :
         return "".join(key)
     
     
+    def createRandomDictionnary(self, dict_size=None) :
+        """Return random dictionary with size that you have specified"""
+        dic = {}
+        s = dict_size or self.size
+
+        for i in range(s) :
+            key = self.returnRandomString(self.key_length or 10)    
+            value = self.returnRandomString(self.values_length or 10)
+            dic[key] = value
+        return dic
+    
     
 
