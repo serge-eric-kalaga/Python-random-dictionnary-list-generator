@@ -7,7 +7,7 @@ class RandomListOrDictionnary() :
         -   This size is defined at the instantiation of the object.
         -   By default, it generates a list or a dictionary of 5 elements.
         -   You can also specify the size of the list or dictionary when calling the method.
-        -   You can also specify the size of keys/values ​​when instantiating or calling the object
+        -   You can also specify the size of keys/values when instantiating or calling the object
         
         examples : 
             #Instantiation with default parameters
@@ -25,6 +25,7 @@ class RandomListOrDictionnary() :
         
         
     def returnRandomString(self, size) :
+        """Return random string with size that you have specified"""
         alpha_numeric = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
         key = random.choices(alpha_numeric, k=(random.randint(3, size)))
         return "".join(key)
