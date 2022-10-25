@@ -12,6 +12,7 @@ Class to generate random list or dictionnary in python
     -   examples : 
         -   #Instantiation with default parameters
             rd_ld = RandomListOrDictionnary(size=5, key_length=3, values_length=5)
+            
         -   #We can specify the size
-        -   my_list = rd_ld.createRandomDictionnary(3)
+            my_list = rd_ld.createRandomDictionnary(3)
             my_dict = rd_ld.createRandomList(3)
