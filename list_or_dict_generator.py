@@ -52,4 +52,7 @@ class RandomListOrDictionnary() :
             list.append(value)
         return list
     
+# rld = RandomListOrDictionnary(10)
 
+# print(rld.createRandomDictionnary())
+# print(rld.createRandomList())
