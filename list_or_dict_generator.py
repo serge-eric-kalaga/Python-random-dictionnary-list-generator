@@ -42,4 +42,14 @@ class RandomListOrDictionnary() :
         return dic
     
     
+    def createRandomList(self, list_size=None) :
+        """Return random list with size that you have specified"""
+        list = []
+        s = list_size or self.size
+
+        for i in range(s) :   
+            value = self.returnRandomString(self.values_length or 10)
+            list.append(value)
+        return list
+    
 
